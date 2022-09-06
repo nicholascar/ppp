@@ -1,0 +1,7 @@
+{
+    "@context": {
+        "prof": "http://www.w3.org/ns/dx/prof/",
+        "dcterms": "http://purl.org/dc/terms/",
+        "Profile": "prof:Profile"
+    }
+}

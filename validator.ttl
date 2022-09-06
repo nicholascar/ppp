@@ -1,0 +1,37 @@
+# Prez Profile of PROF
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcatnull: <https://w3id.org/profile/dcatnull/validator/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sdo: <https://schema.org/>
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX vcard: <http://www.w3.org/2006/vcard/ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://w3id.org/profile/ppp>
+    a owl:Ontology ;
+    dcterms:created "2022-09-06"^^xsd:date ;
+    dcterms:creator <https://orcid.org/0000-0002-8742-7730> ;
+    dcterms:description """This validator tests the data for conformance to the rules in the Specification of the Prez Profile of PROF (PPP)."""@en ;
+    dcterms:modified "2022-09-06"^^xsd:date ;
+    dcterms:publisher <https://orcid.org/0000-0002-8742-7730> ;
+    dcterms:title "PPP Validator"@en ;
+    owl:versionIRI <https://w3id.org/profile/ppp/validator/1.0.0> ;
+    owl:versionInfo "1.0.0" ;
+.
+
+<https://orcid.org/0000-0002-8742-7730>
+    sdo:email "nick@kurrawong.net"^^xsd:anyURI ;
+    sdo:name "Nicholas J. Car" ;
+.
+
+ppp:profile
+    a sh:NodeShape ;
+    sh:property
+    sh:targetClass prof:Profile ;
+.
